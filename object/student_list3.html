@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List 3-Management</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script src="/java-script/object/student.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <style>
+        .btn-xs { padding: 1px 5px; font-size: 12px; line-height: 1.5; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Student List 3</h3>
+        <hr>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="studentlist.html">Student List</a></li>
+            <li class="breadcrumb-item"><a href="student _list2.html">Student- list 2</a></li>
+            <li class="breadcrumb-item active">Student List 3</li>
+        </ul>
+
+        <div class="table-responsive">
+            <table id="myTable" class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th class="text-center">No</th>
+                        <th class="text-center">Student Code</th>
+                        <th>
+                            <div class="d-flex justify-content-between">
+                                <div>FullName</div>
+                                <div>[Sex]</div>
+                            </div>
+                        </th>
+                        <th class="text-center">Date</th>
+                        <th class="text-center">On/Off</th>
+                        <th class="text-center">Delete</th>
+                        <th class="text-center">Edit</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="text-center">
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" id="prev" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" id="next" href="#">Next</a></li>
+                </ul>
+            </nav>
+            <div id="page-numbers" class="text-muted">Page 1 of 5</div>
+        </div>
+    </div>
+    <script src="/java-script/object/stuent-list3.js"></script>
+</body>
+</html>

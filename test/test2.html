@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+</head>
+<body>
+    <h2>javascript html dom</h2>
+    <h3>Element-1</h3>
+    <button type="button" onclick="alert('Hello')">change1</button>
+    <hr>
+    <h3>Element-2</h3>
+    <button type="button" onclick="changeElement2()">change2</button>
+    <hr>
+    <div class="tittle">Element-3</div>
+    <button type="button">change3</button>
+    <hr>
+    <div id="demo">Element-4</div>
+    <button type="button">change4</button>
+
+    <script >
+        function changeElement2(){
+            document.getElementsByTagName('h3')[1].innerHTML="Hello Element2--changed";
+        }
+    </script>
+</body>
+</html>

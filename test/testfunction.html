@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>js</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <script> 
+    function sum(...args){
+        let sum = 0;
+        for (let arg of args) {
+          sum += arg;
+        }
+        return sum;
+         
+    }
+     function products(...args){
+             let total = 1;
+             if (args .length > 0 ){
+                    total = 1;       
+             }
+             for (let arg of args) {
+                total = total* arg;
+              }
+              return total;
+
+     }
+    
+//     function products(...args) {
+//       let total = 1;
+//       for (let arg of args) {
+//         total *= arg;
+//       }
+//       return total;
+//     }
+    let x = sum(2,4,5,6,9,19,20);
+    let y = products(2,4,5,6,9,19,20); 
+    document.getElementById("demo1").innerHTML =  "Sum: " + x;
+    document.getElementById("demo").innerHTML = "Products: " + y;
+   
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check function</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script>
+  
+    <script>
+    // 1. Check if it's ANY valid number (Integer or Decimal)
+    function checkNumber(str) {
+        if (str.trim() === "") return false; // Handle empty input
+        return !isNaN(str); 
+    }
+
+    // 2. Check if it's a Positive Number (can be 5 or 5.5)
+    function checkPositiveNumber(str) {
+        const num = Number(str);
+        if (str.trim() === "") return false;
+        return !isNaN(num) && num > 0;
+    }
+
+    // 3. Decimal check
+    function checkDecimal(str) {
+        return !isNaN(str) && str.includes('.');
+    }
+
+    // 4. Boolean check
+    function checkBoolean(str) {
+        const s = str.toLowerCase().trim();
+        return s === 'true' || s === 'false';
+    }
+
+    // 5. Email check
+    function checkEmail(str) {
+        return str.includes('@') && str.includes('.');
+    }
+
+    // Validation Wrappers for your UI
+    function validateNumber() {
+        let val = document.getElementById('txt1').value;
+        console.log("Is Number:", checkNumber(val));
+    }
+
+    function validatePositiveNumber() {
+        let val = document.getElementById('txt2').value;
+        console.log("Is Positive Number:", checkPositiveNumber(val));
+    }
+</script>
+</head>
+<body>
+      <div class="container">
+        <h3>Validation Function Pratices</h3>
+        <input type="text" class="form-control" id="txt1" placeholder="string">
+        <button type="button" class="btn btn-primary mt-3" onclick="validateNumber()">Check Number</button>
+        <input type="text" class="form-control" id="txt2" placeholder="string">
+        <button type="button" class="btn btn-primary mt-3" onclick="validatePositiveNumber()">Check Postive Number</button>
+      </div>
+</body>
+</html>

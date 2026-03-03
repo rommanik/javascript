@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student list-management</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script src="/java-script/object/student.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>Student-List</h3>
+        <hr>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item active"> student-list</li>
+            <li class="breadcrumb-item"><a href="student _list2.html"> student-list2</a></li>
+            <li class="breadcrumb-item"><a href="student_list3.html"> student-list3</a></li>   
+        </ul>
+        <table id="myTable" class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th class="text-center">No</th>
+                    <th class="text-center">Student Code</th>
+                    <th>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                Fullname
+                            </div>
+                            <div>
+                                [Sex]
+                            </div>
+                        </div>
+                    </th>
+                    <th class="text-center">Contact</th>
+                    <th class="text-center">On/Off</th>
+                    <th class="text-center">Delete</th>
+                    <th class="text-center">Edit</th>
+                </tr>
+            </thead>
+            </thead>
+            <tbody id="studentTableBody"></tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script src="/java-script/object/student_list.js"></script>

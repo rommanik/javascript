@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test3</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script>
+
+    <style>
+        .demo{
+            color: rgb(222, 46, 90);
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <h3>Hello world</h3>
+        <button type="button" class="btn btn-primary" onclick="changeColor()">Click me</button>
+        <hr>
+        <p class="demo">Here's we are ......</p>
+        <hr>
+        <p class="demo">Here's we are ......</p>
+        <hr>
+        <p class="demo">Here's we are ......</p>
+        <hr>
+        <p class="demo">Here's we are ......</p>
+    </div>
+    <div class="container ">
+        <div id="form">
+           <p>Area1</p>
+           <p>Area2</p>
+           <p>Area3</p>
+           <p>kim1</p>
+           <p>kim2</p>
+           <p>kim3</p>
+           <button type="button" class="btn btn-primary" onclick="changeTest()">Click me</button>
+           <div id="redo">final result</div>
+        </div>
+        
+       
+    
+
+    <script>
+        function changeColor(){
+            const myItem=document.querySelectorAll('.demo');
+        
+               for(let i=0;i<myItem.length;i++){
+                
+                myItem[i].style.color="green"; 
+                myItem[i].style.fontSize="30px";
+                myItem[i].style.textDecoration="underline";
+                myItem[i].style.textDecorationColor="red";
+                myItem[i].innerHTML="Changed Successfully" 
+                 +" "+ (i+1);
+            }
+        }
+        function changeTest(){
+            let redo=document.getElementById('redo');
+
+            let form=document.getElementById('form');
+
+            redo.innerHTML=form.innerHTML;
+        }
+        
+    </script>
+</body>
+</html>
